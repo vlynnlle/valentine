@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ♡</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #f6efe6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Cormorant Garamond', serif;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      color: #b23a48;
+      opacity: 0.4;
+      font-size: 16px;
+    }
+
+    .card {
+      width: 520px;
+      max-width: 90%;
+      background: #fffaf5;
+      border: 2px solid #b23a48;
+      border-radius: 32px;
+      padding: 50px 40px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      max-height: 80vh;
+    }
+
+    h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 46px;
+      color: #b23a48;
+      margin-bottom: 20px;
+      flex-shrink: 0;
+    }
+
+    .note {
+      font-size: 20px;
+      line-height: 1.8;
+      color: #5a3e3e;
+      white-space: pre-line;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    /* scrollbar biar halus */
+    .note::-webkit-scrollbar {
+      width: 6px;
+    }
+    .note::-webkit-scrollbar-thumb {
+      background: #d8b4a0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<script>
+  for (let i = 0; i < 26; i++) {
+    const h = document.createElement("div");
+    h.className = "heart";
+    h.innerText = "❤";
+    h.style.left = Math.random() * 100 + "vw";
+    h.style.top = Math.random() * 100 + "vh";
+    h.style.fontSize = (12 + Math.random() * 14) + "px";
+    document.body.appendChild(h);
+  }
+</script>
+
+<div class="card">
+  <h1>Happy Valentine, Kakakku Tersayang ♡</h1>
+
+  <div class="note">
+  hai cece cantik 🤍
+  selamat hari kasih sayang
+  untuk kakak terbaik sedunia!
+  (i only have one sister tho haha)
+  xixixi
+  
+  anyways, elyn cuman mau bilang,
+  terima kasih ya sudah ada di dunia ini
+  dan menjadi cecenya elyn.
+  elyn seneng banget bisa jadi adiknya cece
+  yang sangat keren dan gacor ini.
+  
+  i love you so much. i don't know
+  how to live without you (seriously,
+  so please don't ever leave me alone)
+  
+  i'm who i am today because i knew you.
+  and i'm so glad i knew you.
+  keep being the wonderful person you are.
+  
+  semangat untuk projek barunya yeah ce.
+  elyn sayang cece banyak-banyak 🤍
+
+  with love,
+  Aily
+  </div>
+</div>
+
+</body>
+</html>
